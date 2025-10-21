@@ -1,0 +1,51 @@
+© Copyright 2025 by hackbard
+
+LIZENZ [v1.0 2001.09.11-2025.08.06]
+
+
+DIESES PROGRAM:
+
+1. Lizenz
+=========
+DIESE SOFTWARE WIRD "SO WIE SIE IST" ZUR VERFÜGUNG GESTELLT, OHNE GEWÄHRLEISTUNG 
+IRGENDEINER ART. SIE HABEN DAS RECHT ES WEITER ZU VERTEILEN ODER DEN QUELLCODE ZU 
+MODIFIZIEREN.
+
+DIESE SOFTWARE DARF NUR FÜR NICHT KOMMERZIELLE ZWECKE EINGESETZT WERDEN.
+
+
+2. Haftung
+==========
+IN KEINEM FALL KANN DER AUTOR HAFTBAR GEMACHT WERDEN FÜR IRGENDWELCHE SCHÄDEN, 
+GLEICH WELCHER ART.
+
+
+3. COPYRIGHT
+============
+Die Software wird sowohl durch Urheberrechtsgesetze und internationale 
+Urheberrechtsverträge geschützt, als auch durch andere Gesetze und Vereinbarungen 
+über geistiges Eigentum.
+
+
+THIS PROGRAM:
+
+1. License
+=========
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT ANY WARRANTIES
+ANY KIND. YOU HAVE THE RIGHT TO REDISTRIBUTE OR RECEIVE THE SOURCE CODE
+MODIFY.
+
+USE OF THIS SOFTWARE FOR NON-COMMERCIAL PURPOSES ONLY.
+
+
+2. Liability
+==========
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DAMAGES,
+NO MATTER WHAT KIND.
+
+
+3. COPYRIGHT
+============
+The software is protected by both copyright laws and international
+protected by copyright treaties, as well as other laws and agreements
+about intellectual property.
