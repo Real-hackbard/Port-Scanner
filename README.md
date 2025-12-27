@@ -10,11 +10,6 @@
 
 </br>
 
-
-
-
-
-
 A port scanner is an application designed to probe a server or host for open ports. Such an application may be used by administrators to verify security policies of their networks and by attackers to identify [network services](https://en.wikipedia.org/wiki/Network_service) running on a [host](https://en.wikipedia.org/wiki/Host_(network)) and exploit vulnerabilities.
 
 A port scan or portscan is a process that sends client requests to a range of server port addresses on a host, with the goal of finding an active port; this is not a nefarious process in and of itself. The majority of uses of a port scan are not attacks, but rather simple probes to determine services available on a remote machine.
@@ -23,7 +18,7 @@ To portsweep is to scan multiple hosts for a specific listening port. The latter
 
 </br>
 
-![Port Scanner](https://github.com/user-attachments/assets/f414d3db-699b-4227-b457-29b634a1ba47)
+![PortScanner](https://github.com/user-attachments/assets/9fba5367-99e8-4897-8329-f975ab0221cd)
 
 </br>
 
