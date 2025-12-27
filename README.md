@@ -18,6 +18,13 @@ To portsweep is to scan multiple hosts for a specific listening port. The latter
 
 </br>
 
+### Update:
+* Port List
+* Remove Duplcates
+* Get Port Description
+* Search Port
+* Menu funnctions
+
 ![PortScanner](https://github.com/user-attachments/assets/9fba5367-99e8-4897-8329-f975ab0221cd)
 
 </br>
