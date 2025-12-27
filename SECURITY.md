@@ -9,6 +9,7 @@ currently being supported with security updates.
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |
 | 1.0.2   | :white_check_mark: |
+| 1.0.3   | :white_check_mark: Update Port List, Add PopUpMenu functions, compare & remove duplicates, ping Server |
 
 ## Reporting a Vulnerability
 
