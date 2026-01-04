@@ -20,7 +20,7 @@ To portsweep is to scan multiple hosts for a specific listening port. The latter
 
 ### Update:
 * Port List
-* Remove Duplcates
+* Remove Duplicates
 * Get Port Description
 * Search Port
 * Menu funnctions
