@@ -98,8 +98,8 @@ Displays active TCP connections, ports on which the computer is listening, Ether
 | ```-b```     | Displays the executable involved in creating each connection or listening port. In some cases well-known executables host multiple independent components, and in these cases the sequence of components involved in creating the connection or listening port is displayed. In this case the executable name is in [] at the bottom, on top is the component it called, and so forth until TCP/IP was reached. Note that this option can be time-consuming and will fail unless you have sufficient permissions. ```It is missing because no proper feedback or information is being sent.```     |
 | ```-e```     | Displays Ethernet statistics, such as the number of bytes and packets sent and received. This parameter can be combined with ```-s```. |
 | ```-n```     | Displays active TCP connections, however, addresses and port numbers are expressed numerically and no attempt is made to determine names. |
-| ```-a```     |     |
-| ```-a```     |     |
+| ```-o```     | Displays active TCP connections and includes the process ID (PID) for each connection. You can find the application based on the PID on the Processes tab in Windows Task Manager. This parameter can be combined with ```-a```, ```-n```, and ```-p```. |
+| ```-p```     | Shows connections for the protocol specified by Protocol. In this case, the Protocol can be tcp, udp, tcpv6, or udpv6. If this parameter is used with ```-s``` to display statistics by protocol, Protocol can be tcp, udp, icmp, ip, tcpv6, udpv6, icmpv6, or ipv6. |
 | ```-a```     |     |
 | ```-a```     |     |
 
