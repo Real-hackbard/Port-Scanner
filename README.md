@@ -78,7 +78,7 @@ UDP scanning is also possible, although there are technical challenges. [UDP](ht
 ### :speech_balloon: ACK Scanning:
 ACK scanning is one of the more unusual scan types, as it does not exactly determine whether the port is open or closed, but whether the port is filtered or unfiltered. This is especially good when attempting to probe for the existence of a firewall and its rulesets. Simple packet filtering will allow established connections (packets with the ACK bit set), whereas a more sophisticated [stateful firewall](https://en.wikipedia.org/wiki/Stateful_firewall) might not.
 
-### Window Scanning:
+### :speech_balloon: Window Scanning:
 Rarely used because of its outdated nature, window scanning is fairly untrustworthy in determining whether a port is opened or closed. It generates the same packet as an ACK scan, but checks whether the window field of the packet has been modified. When the packet reaches its destination, a design flaw attempts to create a window size for the packet if the port is open, flagging the window field of the packet with 1's before it returns to the sender. Using this scanning technique with systems that no longer support this implementation returns 0's for the window field, labeling open ports as closed.
 
 ### :speech_balloon: FIN Scanning:
