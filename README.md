@@ -23,7 +23,7 @@ To portsweep is to scan multiple hosts for a specific listening port. The latter
 </br>
 </br>
 
-### TCP/IP basics:
+### :speech_balloon: TCP/IP basics:
 The design and operation of the Internet is based on the [Internet Protocol Suite](https://en.wikipedia.org/wiki/Internet_protocol_suite), commonly also called TCP/IP. In this system, network services are referenced using two components: a host address and a port number. There are 65535 distinct and usable port numbers, numbered 1 … 65535. (Port zero is not a usable port number.) Most services use one, or at most a limited range of, port numbers.
 
 Some port scanners scan only the most common port numbers, or ports most commonly associated with vulnerable services, on a given host.
@@ -42,7 +42,7 @@ Open ports present two vulnerabilities of which [super administrators](https://e
 
 </br>
 
-### Notable well-known Port Numbers:
+### :speech_balloon: Notable well-known Port Numbers:
 
 | Port | Assignment | 
 | :----: | :--------: | 
@@ -66,20 +66,20 @@ Open ports present two vulnerabilities of which [super administrators](https://e
 
 </br>
 
-### TCP Scanning:
+### :speech_balloon: TCP Scanning:
 The simplest port scanners use the operating system's network functions and are generally the next option to go to when SYN is not a feasible option (described next). [Nmap](https://en.wikipedia.org/wiki/Nmap) calls this mode connect scan, named after the Unix connect() system call. If a port is open, the operating system completes the TCP three-way handshake, and the port scanner immediately closes the connection to avoid performing a [Denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) attack. Otherwise an error code is returned. This scan mode has the advantage that the user does not require special privileges. However, using the OS network functions prevents low-level control, so this scan type is less common. This method is "noisy", particularly if it is a "portsweep": the services can log the sender IP address and [Intrusion detection systems](https://en.wikipedia.org/wiki/Intrusion_detection_system) can raise an alarm.
 
-### SYN Scanning:
+### :speech_balloon: SYN Scanning:
 [SYN](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_establishment) scan is another form of TCP scanning. Rather than using the operating system's network functions, the port scanner generates raw IP packets itself, and monitors for responses. This scan type is also known as "half-open scanning", because it never actually opens a full TCP connection. The port scanner generates a SYN packet. If the target port is open, it will respond with a SYN-ACK packet. The scanner host responds with an RST packet, closing the connection before the handshake is completed.[3] If the port is closed but unfiltered, the target will instantly respond with an RST packet.
 
-### UDP Scanning:
+### :speech_balloon: UDP Scanning:
 UDP scanning is also possible, although there are technical challenges. [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) is a [connectionless protocol](https://en.wikipedia.org/wiki/Connectionless_communication) so there is no equivalent to a TCP SYN packet. However, if a UDP packet is sent to a port that is not open, the system will respond with an [ICMP](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) port unreachable message. Most UDP port scanners use this scanning method, and use the absence of a response to infer that a port is open. However, if a port is blocked by a [firewall](https://en.wikipedia.org/wiki/Firewall_(computing)), this method will falsely report that the port is open. If the port unreachable message is blocked, all ports will appear open. This method is also affected by ICMP [rate limiting](https://en.wikipedia.org/wiki/Rate_limiting).
 
-### ACK Scanning:
+### :speech_balloon: ACK Scanning:
 ACK scanning is one of the more unusual scan types, as it does not exactly determine whether the port is open or closed, but whether the port is filtered or unfiltered. This is especially good when attempting to probe for the existence of a firewall and its rulesets. Simple packet filtering will allow established connections (packets with the ACK bit set), whereas a more sophisticated [stateful firewall](https://en.wikipedia.org/wiki/Stateful_firewall) might not.
 
 ### Window Scanning:
 Rarely used because of its outdated nature, window scanning is fairly untrustworthy in determining whether a port is opened or closed. It generates the same packet as an ACK scan, but checks whether the window field of the packet has been modified. When the packet reaches its destination, a design flaw attempts to create a window size for the packet if the port is open, flagging the window field of the packet with 1's before it returns to the sender. Using this scanning technique with systems that no longer support this implementation returns 0's for the window field, labeling open ports as closed.
 
-### FIN Scanning:
+### :speech_balloon: FIN Scanning:
 Since SYN scans are not surreptitious enough, firewalls are, in general, scanning for and blocking packets in the form of SYN packets.[3] FIN packets can bypass firewalls without modification. Closed ports reply to a [FIN packet](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_termination) with the appropriate RST packet, whereas open ports ignore the packet on hand. This is typical behavior due to the nature of TCP, and is in some ways an inescapable downfall.
