@@ -10,7 +10,7 @@ currently being supported with security updates.
 | 1.0.x   | :white_check_mark: |
 | 1.0.2   | :white_check_mark: compare & remove duplicates, ping Server, get Port Description |
 | 1.0.3   | :white_check_mark: Update Port List, Add PopUpMenu functions |
-| 1.0.4   | :white_check_mark: Monitoring NetStatistic |
+| 1.0.4   | :white_check_mark: Monitoring NetStatistic; Modified Ping function; Report conversion to ListView; Time measurement |
 
 ## Reporting a Vulnerability
 
