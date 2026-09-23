@@ -86,7 +86,7 @@ Since SYN scans are not surreptitious enough, firewalls are, in general, scannin
 
 <br>
 
-# Monitoring NetStat
+# :speech_balloon: Monitoring NetStat
 
 Displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, IPv4 statistics (for the IP, ICMP, TCP, and UDP protocols), and IPv6 statistics (for the IPv6, ICMPv6, TCP over IPv6, and UDP over IPv6 protocols). Used without parameters, this command displays active TCP connections.
 
@@ -103,8 +103,8 @@ Displays active TCP connections, ports on which the computer is listening, Ether
 | ```-q```     | Displays all connections, listening ports, and bound nonlistening TCP ports. Bound nonlistening ports may or may not be associated with an active connection. |
 | ```-s```     | Displays statistics by protocol. By default, statistics are shown for the TCP, UDP, ICMP, and IP protocols. If the IPv6 protocol is installed, statistics are shown for the TCP over IPv6, UDP over IPv6, ICMPv6, and IPv6 protocols. The ```-p``` parameter can be used to specify a set of protocols. |
 | ```-r```     | Displays the contents of the IP routing table. This is equivalent to the route print command. |
-| ```-a```     |     |
-| ```-a```     |     |
+| ```<interval>```     | Redisplays the selected information every interval seconds. Press ```CTRL+C``` to stop the redisplay. If this parameter is omitted, this command prints the selected information only once. |
+| ```/?```     | Displays help at the command prompt. |
 
 
 
