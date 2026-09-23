@@ -83,3 +83,18 @@ Rarely used because of its outdated nature, window scanning is fairly untrustwor
 
 ### :speech_balloon: FIN Scanning:
 Since SYN scans are not surreptitious enough, firewalls are, in general, scanning for and blocking packets in the form of SYN packets.[3] FIN packets can bypass firewalls without modification. Closed ports reply to a [FIN packet](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_termination) with the appropriate RST packet, whereas open ports ignore the packet on hand. This is typical behavior due to the nature of TCP, and is in some ways an inescapable downfall.
+
+<br>
+
+# Monitoring NetStat
+
+Displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, IPv4 statistics (for the IP, ICMP, TCP, and UDP protocols), and IPv6 statistics (for the IPv6, ICMPv6, TCP over IPv6, and UDP over IPv6 protocols). Used without parameters, this command displays active TCP connections.
+
+<br>
+
+| Parameter | Description |
+| :-----------: | :-----------: |
+| ```-a```     | Displays all active TCP connections and the TCP and UDP ports on which the computer is listening.     |
+| ```-b```     | Displays the executable involved in creating each connection or listening port. In some cases well-known executables host multiple independent components, and in these cases the sequence of components involved in creating the connection or listening port is displayed. In this case the executable name is in [] at the bottom, on top is the component it called, and so forth until TCP/IP was reached. Note that this option can be time-consuming and will fail unless you have sufficient permissions. ```It is missing because no proper feedback or information is being sent.```     |
+
+
